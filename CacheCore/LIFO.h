@@ -25,7 +25,7 @@ public:
             // If cache is full, remove the head
             if (cache_map.size() == capacity)
             {
-                cache_map.erase(head->key);
+                cache_map.erase(tail->key);
                 removeTail();
             }
             // Add the new node to the tail
